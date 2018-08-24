@@ -1,2 +1,2 @@
 # PracticeLotsThings_PairServer
-this a server to pair player into Photon Room
+this a server for pairing player into Photon Room
