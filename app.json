@@ -1,0 +1,14 @@
+{
+  "name": "practicelotsthings-pairserver",
+  "description": "",
+  "repository": "https://github.com/wannasaynone/PracticeLotsThings_PairServer.git",
+  "keywords": ["PairServer"],
+  "buildpacks": [
+    {
+      "url": "https://github.com/wannasaynone/PracticeLotsThings_PairServer.git"
+    },
+    {
+      "url": "heroku/go"
+    }
+  ]
+}
