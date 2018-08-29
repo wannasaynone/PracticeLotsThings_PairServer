@@ -5,11 +5,12 @@ import (
 	"errors"
 	"math/rand"
 	"net"
-	"os"
 	"reflect"
 	"strconv"
 	"strings"
 )
+
+const PORT = ":5000"
 
 // NewGameSetting : new player registered new game setting
 type NewGameSetting struct {
@@ -49,14 +50,14 @@ func main() {
 	go QueuePairedClient()
 	go CallClinetJoinRoom()
 
-	listener, err := net.Listen("tcp", ":"+os.Getenv("PORT"))
+	listener, err := net.Listen("tcp", PORT)
 
 	if err != nil {
 		println("err" + err.Error())
 		return
 	}
 
-	println("Server Started:" + os.Getenv("PORT"))
+	println("Server Started:" + PORT)
 
 	for {
 		conn, err := listener.Accept()
