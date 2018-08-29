@@ -49,14 +49,21 @@ func main() {
 	go QueuePairedClient()
 	go CallClinetJoinRoom()
 
-	listener, err := net.Listen("tcp", ":"+os.Getenv("PORT"))
+	var port = os.Getenv("PORT")
+ 	// Set a default port if there is nothing in the environment
+ 	if port == "" {
+ 		port = "4747"
+ 		println("INFO: No PORT environment variable detected, defaulting to " + port)
+	}
+
+	listener, err := net.Listen("tcp", ":"+port)
 
 	if err != nil {
 		println("err" + err.Error())
 		return
 	}
 
-	println("Server Started:" + os.Getenv("PORT"))
+	println("Server Started:" + port)
 
 	for {
 		conn, err := listener.Accept()

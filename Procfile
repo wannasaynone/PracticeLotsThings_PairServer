@@ -1,1 +1,1 @@
-web: practicelotsthings-pairserver -p 1024
+web: practicelotsthings-pairserver
