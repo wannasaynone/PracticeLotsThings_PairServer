@@ -1,9 +1,9 @@
 {
-  "name": "PracticeLotsThings_PairServer",
+  "name": "Practice Lots Things Pair Server",
   "description": "this a server for pairing player into Photon Room",
   "keywords": [
     "go"
   ],
-  "website": "https://github.com/wannasaynone/PracticeLotsThings_PairServer",
-  "repository": "https://github.com/wannasaynone/PracticeLotsThings_PairServer"
+  "website": "https://github.com/wannasaynone/practicelotsthings-pairserver",
+  "repository": "https://github.com/wannasaynone/practicelotsthings-pairserver"
 }

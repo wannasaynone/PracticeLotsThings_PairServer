@@ -1,1 +1,1 @@
-web: PracticeLotsThings_PairServer
+web: practicelotsthings-pairserver
