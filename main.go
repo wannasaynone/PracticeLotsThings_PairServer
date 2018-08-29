@@ -5,7 +5,6 @@ import (
 	"errors"
 	"math/rand"
 	"net"
-	"os"
 	"reflect"
 	"strconv"
 	"strings"
@@ -49,14 +48,14 @@ func main() {
 	go QueuePairedClient()
 	go CallClinetJoinRoom()
 
-	listener, err := net.Listen("tcp", ":"+os.Getenv("PORT"))
+	listener, err := net.Listen("tcp", ":80")
 
 	if err != nil {
 		println("err" + err.Error())
 		return
 	}
 
-	println("Server Started:" + os.Getenv("PORT"))
+	println("Server Started:80")
 
 	for {
 		conn, err := listener.Accept()
