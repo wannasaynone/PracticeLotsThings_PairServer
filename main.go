@@ -48,14 +48,14 @@ func main() {
 	go QueuePairedClient()
 	go CallClinetJoinRoom()
 
-	listener, err := net.Listen("tcp", ":80")
+	listener, err := net.Listen("tcp", ":1024")
 
 	if err != nil {
 		println("err" + err.Error())
 		return
 	}
 
-	println("Server Started:80")
+	println("Server Started")
 
 	for {
 		conn, err := listener.Accept()
